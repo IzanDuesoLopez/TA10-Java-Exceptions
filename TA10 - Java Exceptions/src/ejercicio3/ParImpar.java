@@ -1,5 +1,7 @@
 package ejercicio3;
 
+import java.util.Random;
+
 public class ParImpar {
 
 	// Atributos
@@ -11,6 +13,16 @@ public class ParImpar {
 	}
 	
 	// método generarNumAleatorio()
+	
+	public int numeroAleatorio() {
+		int minimo = 0;
+		int maximo =999;
+		Random numRandom = new Random();
+
+		int numeroAleatorio = numRandom.nextInt((maximo - minimo) + 1) + minimo;
+
+		return numeroAleatorio;
+	}
 	
 	// método comprobarEsParOImpar()
 	public boolean esParOImpar() {
