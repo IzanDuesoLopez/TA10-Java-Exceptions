@@ -39,20 +39,35 @@ public class Calculos {
 	// Para las raices usamos la excepcion de que no se puede hacer 
 	// la operación raíz cuadrada a^1/2
 	public double raiz_cuadrada(double a) {
+		try {
+			if(a < 0) throw new ExcepcionPropia(1);
+		} catch(ExcepcionPropia e) {
+			System.out.println(e.getMessage());
+		}
 		return Math.sqrt(a);
 	}
 	
 	// la operación raíz cubica a^1/3
 	public static double raiz_cubica(double a) {
+		try {
+			if(a < 0) { 
+				throw new ExcepcionPropia(1);
+			}
+		} catch(ExcepcionPropia e) {
+			System.out.println(e.getMessage());
+		}
 		return Math.cbrt(a);
 	}
 	
 	// la operación división a/b (con la excepción de /0)
 	public double division(double a, double b) {
 	    try {
-	        double resultado  = a / b;
-	    } catch (Exception e) {
-	        System.out.println("No se puede dividir un número entre 0");	      
+	        //double resultado  = a / b;
+	    	if(a == 0 || b == 0) {
+	    		throw new ExcepcionPropia(2);
+	    	}
+	    } catch (ExcepcionPropia e) {
+	        System.out.println(e.getMessage());	      
 	    }
 	    	return a / b;
 	}
