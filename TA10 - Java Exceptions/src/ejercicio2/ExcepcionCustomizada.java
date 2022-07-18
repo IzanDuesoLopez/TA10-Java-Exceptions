@@ -24,16 +24,16 @@ public class ExcepcionCustomizada extends Exception{
 		switch(this.codigo) {
 		// Comprobamos los diferentes casos
 		case 1:
-			resultado = "";
+			resultado = "Excepción 1. Reinicie Eclipse para corregir comportamiento";
 			break;
 		case 2:
-			resultado = "";
+			resultado = "Excepción 2. Reinicie su equipo.";
 			break;
 		case 3:
-			resultado = "";
+			resultado = "Excepción 3. Apague su equipo y desconéctelo de la corriente.";
 			break;
 		default:
-			resultado = "";
+			resultado = "Excepción desconocida.";
 			break;
 		}
 		
