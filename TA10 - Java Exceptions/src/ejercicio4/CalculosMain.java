@@ -49,7 +49,7 @@ public class CalculosMain {
 			System.out.println(a + " * " + b + " = " + calcular.multiplicacion(a,b));
 			break;
 		case 4: // En el caso de la potencia, introducimos dos valores. El segundo de ellos será el exponente
-			System.out.println(a + "^" + b + " = " + calcular.potencia(a, (int) b));
+			System.out.println(a + "^" + b + " = " + calcular.potencia(a, (int) b)); // Casteamos a entero el valor B para que no provoque conflictos
 			break;
 		case 5: // En el caso de la raíz cuadrada, introducimos un valor y realizamos el calculo
 			System.out.println("sqrt(" + a + ")" + " = " + String.format("%.2f", calcular.raiz_cuadrada(a)));
