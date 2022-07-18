@@ -20,7 +20,7 @@ public class ExcepcionMainApp {
 			}
 
 		} catch (ExcepcionCustomizada ex) {
-			System.out.println(ex.getMessage());
+			System.out.println("Mensaje mostrado por pantalla\nExcepción capturada con el mensaje: " + ex.getMessage() + "\nPrograma terminado");
 		}
 	}
 }
