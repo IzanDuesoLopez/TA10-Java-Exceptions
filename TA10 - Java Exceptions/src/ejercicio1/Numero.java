@@ -14,4 +14,8 @@ public class Numero {
 	
 	// Método conseguirAdivinarlo
 	
+	public static void pedirNúmero {
+		
+	}
+
 }
