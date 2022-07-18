@@ -29,10 +29,11 @@ public class CalculosMain {
 		
 		// En el caso de que la operación necesite pedir dos números
 		if(opcionMenu == 1 || opcionMenu == 2 || opcionMenu == 3 || opcionMenu == 4 || opcionMenu == 7) {
-			introducirDosValores(a, b, sc);
+			a = introducirValorA(sc);
+			b = introducirValorB(sc);
 		// En el caso de que únicamente necesite pedir un número
 		} else if (opcionMenu == 5 || opcionMenu == 6){
-			introducirUnValor(a, sc);
+			a = introducirValorA(sc);
 		}
 
 		// Switch con la opción elegida por el usuario
@@ -66,20 +67,18 @@ public class CalculosMain {
 		}
 	}
 
-	/* Método al que le pasamos por parámetro dos valores y el scanner para
-	   actualizar el valor de la posición de memória que contienen estas variables */
-	public static void introducirDosValores(double a, double b, Scanner sc) {
+	// Método que nos retorna un número decimal pidiendoselo al usuario por pantalla como valor A
+	public static double introducirValorA(Scanner sc) {
 		System.out.println("Introduce un valor A: ");
-		a = sc.nextDouble();
-		System.out.println("Introduce un valor B: ");
-		b = sc.nextDouble();
+		double a = sc.nextDouble();
+		return a;
 	}
 
-	/* Método al que le pasamos por parámetro un valor y el scanner para actualizar
-	   el valor de la posición de memória que contiene esta variable */
-	public static void introducirUnValor(double a, Scanner sc) {
-		System.out.println("Introduce un valor A: ");
-		a = sc.nextDouble();
+	// Método que nos retorna un número decimal pidiendoselo al usuario por pantalla como valor B
+	public static double introducirValorB(Scanner sc) {
+		System.out.println("Introduce un valor B: ");
+		double b = sc.nextDouble();
+		return b;
 	}
 
 }
