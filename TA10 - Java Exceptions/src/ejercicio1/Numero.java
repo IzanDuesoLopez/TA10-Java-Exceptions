@@ -50,7 +50,7 @@ public class Numero {
 				}
 			}
 		} catch (InputMismatchException e) {
-			System.out.println("Eso no es un número");
+			System.out.println("Eso no es un número" + e.getMessage());
 		}
 
 		sc.close();
