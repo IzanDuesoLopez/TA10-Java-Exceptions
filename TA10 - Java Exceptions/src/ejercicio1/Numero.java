@@ -27,9 +27,7 @@ public class Numero {
 	
 	// Método adivinarNumero
 		// Comprobar si es un número, si no lo es incrementar resultados. Utilizar la Excepcion InputMismatchException
-	public void adivinarNumero() {
-		
-	}
+	
 	
 	// Método conseguirAdivinarlo
 	public void conseguirAdivinarlo() {
