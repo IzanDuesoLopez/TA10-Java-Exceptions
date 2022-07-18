@@ -1,6 +1,8 @@
 package ejercicio1;
 
+import java.util.InputMismatchException;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Numero {
 	
@@ -27,6 +29,36 @@ public class Numero {
 	
 	// Método adivinarNumero
 		// Comprobar si es un número, si no lo es incrementar resultados. Utilizar la Excepcion InputMismatchException
+	public boolean adivinarNumero() {
+		Scanner sc = new Scanner(System.in);
+		int numero = -1;
+		
+		while(numero != this.numero) {
+			System.out.println("Escribir número:");
+			
+			try {
+				numero = sc.nextInt();
+			} catch(InputMismatchException e) {
+				System.out.println("Eso no es un número");			
+			}
+
+
+			if(this.numero < numero) {
+				System.out.println("El número es más pequeño.");
+				numeroIntentos++;
+			} else if(this.numero > numero) {
+				System.out.println("El número es más grande.");
+				numeroIntentos++;
+			} else if(this.numero == numero) {
+				System.out.println("El número es correcto.");
+				break;
+			}
+		}
+		
+		sc.close();
+		
+		return true;
+	}
 	
 	// Método conseguirAdivinarlo
 	
