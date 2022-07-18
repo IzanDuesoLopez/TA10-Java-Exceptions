@@ -47,7 +47,6 @@ public class Numero {
 					numeroIntentos++;
 				} else if (this.numero == numero) {
 					conseguirAdivinarlo();
-					break;
 				}
 			}
 		} catch (InputMismatchException e) {
@@ -62,7 +61,7 @@ public class Numero {
 	// Método conseguirAdivinarlo
 	public void conseguirAdivinarlo() {
 		System.out.println(
-				"Felicidades, conseguiste adivinar el número" + "Tú número de intentos ha sido: " + this.numeroIntentos);
+				"Felicidades, conseguiste adivinar el número" + "\nTú número de intentos ha sido: " + this.numeroIntentos);
 
 	}
 
