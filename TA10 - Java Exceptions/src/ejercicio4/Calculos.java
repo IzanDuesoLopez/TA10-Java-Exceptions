@@ -36,8 +36,8 @@ public class Calculos {
 		return Math.pow(a, potencia);
 	}
 	
-	// Para las raices usamos la excepcion de que no se puede hacer 
 	// la operación raíz cuadrada a^1/2
+	// Para las raices usamos la excepcion propia para que salte cuando el número sea negativo ya que daría un número irracional
 	public double raiz_cuadrada(double a) {
 		try {
 			if(a < 0) throw new ExcepcionPropia(1);
@@ -48,6 +48,7 @@ public class Calculos {
 	}
 	
 	// la operación raíz cubica a^1/3
+	// Para las raices usamos la excepcion propia para que salte cuando el número sea negativo ya que daría un número irracional
 	public static double raiz_cubica(double a) {
 		try {
 			if(a < 0) { 
@@ -62,7 +63,6 @@ public class Calculos {
 	// la operación división a/b (con la excepción de /0)
 	public double division(double a, double b) {
 	    try {
-	        //double resultado  = a / b;
 	    	if(a == 0 || b == 0) {
 	    		throw new ExcepcionPropia(2);
 	    	}

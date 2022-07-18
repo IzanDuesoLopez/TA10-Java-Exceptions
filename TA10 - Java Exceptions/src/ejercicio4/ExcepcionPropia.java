@@ -1,12 +1,13 @@
 package ejercicio4;
 
-public class ExcepcionPropia extends Exception{
-	// Atributos
-	private int codigo;
+public class ExcepcionPropia extends Exception{	
 	private final static String EXCEPCION_UNO = "El resultado es un número irreal.";
 	private final static String EXCEPCION_DOS = "El resultado es un número infinito.";
 	private final static String EXCEPCION_TRES = "Excepción desconocida.";
 	
+	// Atributos
+	private int codigo;
+		
 	// Constructores
 	public ExcepcionPropia() {
 		super();
@@ -23,7 +24,7 @@ public class ExcepcionPropia extends Exception{
 
 		String mensaje = ""; // Almacenamos el mensaje resultante
 
-		// Switch con el codigo de la excepcion
+		// Switch con el código de la excepción
 		switch(codigo) {
 		// Comprobamos los diferentes casos
 		case 1:
