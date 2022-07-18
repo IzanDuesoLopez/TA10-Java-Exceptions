@@ -1,13 +1,11 @@
 package ejercicio4;
 
-import java.util.Scanner;
-
 public class Calculos {
 
 	// Atributos
-	Scanner sc = new Scanner(System.in);
 	private double a;
 	private double b;
+	private int potencia;
 	
 	// Constructores
 	
@@ -18,10 +16,19 @@ public class Calculos {
 	// multiplicación
 	
 	// potencia
+	public double potencia(double a, int potencia) {
+		return Math.pow(a, potencia);
+	}
 	
 	// raíz cuadrada
+	public double raiz_cuadrada(double a) {
+		return Math.sqrt(a);
+	}
 	
 	// raíz cubica
+	public double raiz_cubica(double a) {
+		return Math.cbrt(a);
+	}
 	
 	// raiz
 	
