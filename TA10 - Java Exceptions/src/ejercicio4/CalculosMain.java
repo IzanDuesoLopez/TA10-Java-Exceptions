@@ -39,25 +39,25 @@ public class CalculosMain {
 		switch (opcionMenu) { /* En cada opción del switch, pediremos al usuario que introduzca los valores
 								 correspondientes y finalmente realizaremos el calculo */
 		case 1: // En el caso de la suma, introducimos dos valores y los sumamos
-			calcular.suma(a,b);
+			System.out.println(a + " + " + b + " = " + calcular.suma(a,b));
 			break;
 		case 2: // En el caso de la resta, introducimos dos valores y los restamos
-			calcular.resta(a,b);
+			System.out.println(a + " - " + b + " = " + calcular.resta(a,b));
 			break;
 		case 3: // En el caso de la multiplicación, introducimos dos valores y los multiplicamos
-			calcular.multiplicacion(a,b);
+			System.out.println(a + " * " + b + " = " + calcular.multiplicacion(a,b));
 			break;
 		case 4: // En el caso de la potencia, introducimos dos valores. El segundo de ellos será el exponente
-			calcular.potencia(a, (int) b);
+			System.out.println(a + "^" + b + " = " + calcular.potencia(a, (int) b));
 			break;
 		case 5: // En el caso de la raíz cuadrada, introducimos un valor y realizamos el calculo
-			calcular.raiz_cuadrada(a);
+			System.out.println("sqrt(" + a + ")" + " = " + calcular.raiz_cuadrada(a));
 			break;
 		case 6: // En el caso de la raíz cubica, introducimos un valor y realizamos el calculo
-			calcular.raiz_cubica(a);
+			System.out.println("Raiz cubica de " + a + " = " + calcular.raiz_cubica(a));
 			break;
 		case 7: // En el caso de la división, introducimos dos valores y los dividimos, comprobando que ninguno de ellos sea == a 0
-			calcular.division(a,b);
+			System.out.println(a + " / " + b + " = " + calcular.division(a,b));
 			break;
 		default: /* Si llegamos al caso predeterminado significa que el número entero 
 				 introducido por el usuario no esta siendo controlado en el switch */
