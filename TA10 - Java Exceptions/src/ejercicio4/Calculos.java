@@ -10,19 +10,19 @@ public class Calculos {
 	// Constructores
 	
 	// suma
-	public double suma() {
+	public double suma(double a, double b) {
 		double resultado = a + b;
 		return resultado;
 	}
 	
 	// resta
-	public double resta() {
+	public double resta(double a, double b) {
 		double resultado  = a - b;
 		return resultado;
 	}
 	
 	// multiplicación
-	public double multiplicacion() {
+	public double multiplicacion(double a, double b) {
 		return this.a * this.b;
 	}
 	
@@ -44,13 +44,14 @@ public class Calculos {
 	// raiz
 	
 	// división
-	public double division() {
+	public double division(double a, double b) {
 	    try {
 	        double resultado  = a / b;
 	         return resultado;
 	    } catch (Exception e) {
 	        System.out.println("No se puede dividir un número entre 0");	      
 	    }
+		return this.a / this.b;
 	}
 }
 	
