@@ -35,6 +35,14 @@ public class ParImpar {
 
 	// método capturaNumeroComprobarExcepcion()
 	public void capturaNumeroComprobarExcepcion() {
-		
+		try {
+			if (esParOImpar()) { // Si es par
+				throw new ExcepcionParImpar(esParOImpar());
+			} else { // Si es impar
+				throw new ExcepcionParImpar(false);
+			}
+		} catch (ExcepcionParImpar e) { // Lanzamos el mensaje de la excepción
+			System.out.println(e.getMessage());
+		}
 	}
 }
