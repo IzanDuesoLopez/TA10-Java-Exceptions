@@ -14,6 +14,7 @@ public class ExcepcionCustomizada extends Exception{
 		super();
 		this.codigo = codigo;
 	}
+	
 	// Metodo mostrar mensaje excepcion
 	public String getMessage() {
 		
