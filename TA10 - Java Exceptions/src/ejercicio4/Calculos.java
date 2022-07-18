@@ -10,10 +10,22 @@ public class Calculos {
 	// Constructores
 	
 	// suma
+	public double suma() {
+		double resultado = a + b;
+		return resultado;
+	}
 	
 	// resta
+	public double resta() {
+		double resultado  = a - b;
+		return resultado;
+	}
 	
 	// multiplicación
+	public static double multiplicacion() {
+		double resultado = a * b;
+		return resultado;
+	}
 	
 	// potencia
 	public double potencia(double a, int potencia) {
@@ -33,5 +45,13 @@ public class Calculos {
 	// raiz
 	
 	// división
+	public double division() {
+	    try {
+	        double resultado  = a / b;
+	         return resultado;
+	    } catch (Exception) {
+	        System.out.println("No se puede dividir un número entre 0")
+	    }
+	}
 	
 }
