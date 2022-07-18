@@ -7,10 +7,10 @@ public class ExcepcionMainApp {
 		
 		try {
 			num = 91;
-			codigoExcepcion.mostrarMensaje();		
+			throw new ExcepcionCustomizada();
 			
-		} catch (codigoExcepcion ex) {
-			System.out.println(ex.getMessage));
+		} catch (ExcepcionCustomizada ex) {
+			System.out.println(ex.getMessage());
 	}
 
 	}
