@@ -4,6 +4,10 @@ public class ExcepcionCustomizada extends Exception{
 	
 	// Atributos
 	private int codigo;
+	private final static String EXCEPCION_UNO = "Excepción 1. Reinicie Eclipse para corregir comportamiento";
+	private final static String EXCEPCION_DOS = "Excepción 2. Reinicie su equipo.";
+	private final static String EXCEPCION_TRES = "Excepción 3. Apague su equipo y desconéctelo de la corriente.";
+	private final static String EXCEPCION_CUATRO = "Excepción desconocida.";
 	
 	// Constructores
 	public ExcepcionCustomizada() {
@@ -24,16 +28,16 @@ public class ExcepcionCustomizada extends Exception{
 		switch(this.codigo) {
 		// Comprobamos los diferentes casos
 		case 1:
-			resultado = "Excepción 1. Reinicie Eclipse para corregir comportamiento";
+			resultado = EXCEPCION_UNO;
 			break;
 		case 2:
-			resultado = "Excepción 2. Reinicie su equipo.";
+			resultado = EXCEPCION_DOS;
 			break;
 		case 3:
-			resultado = "Excepción 3. Apague su equipo y desconéctelo de la corriente.";
+			resultado = EXCEPCION_TRES;
 			break;
 		default:
-			resultado = "Excepción desconocida.";
+			resultado = EXCEPCION_CUATRO;
 			break;
 		}
 		

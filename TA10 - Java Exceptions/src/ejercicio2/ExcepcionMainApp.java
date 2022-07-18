@@ -7,6 +7,7 @@ public class ExcepcionMainApp {
 		int num;
 		try {
 			num = 91;
+			
 			throw new ExcepcionCustomizada(1);
 			//throw new ExcepcionCustomizada(2);
 			//throw new ExcepcionCustomizada(3);
