@@ -1,6 +1,6 @@
 package ejercicio2;
 
-public class ExcepcionCustomizada {
+public class ExcepcionCustomizada extends Exception{
 	
 	// Atributos
 	
