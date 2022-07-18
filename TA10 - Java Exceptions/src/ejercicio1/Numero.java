@@ -36,6 +36,7 @@ public class Numero {
 
 		System.out.println("Escribir número:");
 
+		// Mientras el número sea diferente al número aleatorio continuará con el bucle
 		try {
 			while (numero != this.numero) {
 				numero = sc.nextInt();
@@ -46,9 +47,10 @@ public class Numero {
 					System.out.println("El número es más grande.");
 					numeroIntentos++;
 				} else if (this.numero == numero) {
-					conseguirAdivinarlo();
+					conseguirAdivinarlo(); // Si se acierta el número saltará el método
 				}
 			}
+		// Si se entra un valor diferente a un entero se devolverá un mensaje
 		} catch (InputMismatchException e) {
 			System.out.println("Eso no es un número" + e.getMessage());
 		}
