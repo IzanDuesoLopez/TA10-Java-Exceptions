@@ -51,7 +51,7 @@ public class Numero {
 			}
 		
 		} catch (InputMismatchException e) {
-			System.out.println("Eso no es un número" + e.getMessage());
+			System.out.println("Valor introducido no valido = " + e.getMessage());
 		}
 
 		sc.close();
