@@ -49,8 +49,9 @@ public class Calculos {
 	        double resultado  = a / b;
 	         return resultado;
 	    } catch (Exception e) {
-	        System.out.println("No se puede dividir un número entre 0");
+	        System.out.println("No se puede dividir un número entre 0");	      
 	    }
 	}
-	
 }
+	
+
