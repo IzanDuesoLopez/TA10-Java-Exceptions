@@ -29,9 +29,7 @@ public class Numero {
 	
 	// Método adivinarNumero
 		// Comprobar si es un número, si no lo es incrementar resultados. Utilizar la Excepcion InputMismatchException
-<<<<<<< HEAD
-	// Método adivinarNumero
-	// Comprobar si es un número, si no lo es incrementar resultados. Utilizar la Excepcion InputMismatchException
+
 	public boolean adivinarNumero() {
 		Scanner sc = new Scanner(System.in);
 		int numero = -1;
@@ -54,6 +52,7 @@ public class Numero {
 				numeroIntentos++;
 			} else if(this.numero == numero) {
 				System.out.println("El número es correcto.");
+				conseguirAdivinarlo();
 				break;
 			}
 		}
@@ -63,11 +62,6 @@ public class Numero {
 		return true;
 	}
 
-
-=======
-	
-	
->>>>>>> branch 'main' of https://github.com/IzanDuesoLopez/TA10-Java-Exceptions.git
 	// Método conseguirAdivinarlo
 	public void conseguirAdivinarlo() {
 		System.out.println("Felicidades, conseguiste adivinar el número" + "Tú número de intentos ha sido: " + numeroIntentos);
