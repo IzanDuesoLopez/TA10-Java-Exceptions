@@ -37,7 +37,7 @@ public class Calculos {
 	}
 	
 	// raíz cubica
-	public double raiz_cubica(double a) {
+	public static double raiz_cubica(double a) {
 		return Math.cbrt(a);
 	}
 	
@@ -48,8 +48,8 @@ public class Calculos {
 	    try {
 	        double resultado  = a / b;
 	         return resultado;
-	    } catch (Exception) {
-	        System.out.println("No se puede dividir un número entre 0")
+	    } catch (Exception e) {
+	        System.out.println("No se puede dividir un número entre 0");
 	    }
 	}
 	
