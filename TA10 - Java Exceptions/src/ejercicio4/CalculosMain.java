@@ -52,10 +52,10 @@ public class CalculosMain {
 			System.out.println(a + "^" + b + " = " + calcular.potencia(a, (int) b));
 			break;
 		case 5: // En el caso de la raíz cuadrada, introducimos un valor y realizamos el calculo
-			System.out.println("sqrt(" + a + ")" + " = " + calcular.raiz_cuadrada(a));
+			System.out.println("sqrt(" + a + ")" + " = " + String.format("%.2f", calcular.raiz_cuadrada(a)));
 			break;
 		case 6: // En el caso de la raíz cubica, introducimos un valor y realizamos el calculo
-			System.out.println("Raiz cubica de " + a + " = " + calcular.raiz_cubica(a));
+			System.out.println("Raiz cubica de " + a + " = " + String.format("%.2f", calcular.raiz_cubica(a)));
 			break;
 		case 7: // En el caso de la división, introducimos dos valores y los dividimos, comprobando que ninguno de ellos sea == a 0
 			System.out.println(a + " / " + b + " = " + calcular.division(a,b));

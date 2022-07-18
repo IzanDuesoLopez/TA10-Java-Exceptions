@@ -28,7 +28,7 @@ public class Calculos {
 	
 	// la operación multiplicación a*b
 	public double multiplicacion(double a, double b) {
-		return this.a * this.b;
+		return a * b;
 	}
 	
 	// la operación potencia a^potencia
