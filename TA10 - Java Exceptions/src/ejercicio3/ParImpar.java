@@ -9,9 +9,9 @@ public class ParImpar {
 
 	// Constructores
 	public ParImpar() {
-		this.numero = 0;
+		this.numero = numeroAleatorio();
 	}
-
+	
 	// método generarNumAleatorio()
 
 	public int numeroAleatorio() {
@@ -44,5 +44,10 @@ public class ParImpar {
 		} catch (ExcepcionParImpar e) { // Lanzamos el mensaje de la excepción
 			System.out.println(e.getMessage());
 		}
+	}
+	
+	// Getters y setters
+	public int getNumero() {
+		return numero;
 	}
 }
