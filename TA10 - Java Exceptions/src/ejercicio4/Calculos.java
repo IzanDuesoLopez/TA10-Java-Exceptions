@@ -12,39 +12,42 @@ public class Calculos {
 		super();
 	}
 	
-	// suma
+	// Hacemos las distintas operaciones del ejercicio
+	
+	// la operación suma a+b
 	public double suma(double a, double b) {
 		double resultado = a + b;
 		return resultado;
 	}
 	
-	// resta
+	// la operación resta a-b
 	public double resta(double a, double b) {
 		double resultado  = a - b;
 		return resultado;
 	}
 	
-	// multiplicación
+	// la operación multiplicación a*b
 	public double multiplicacion(double a, double b) {
 		return this.a * this.b;
 	}
 	
-	// potencia
+	// la operación potencia a^potencia
 	public double potencia(double a, int potencia) {
 		return Math.pow(a, potencia);
 	}
 	
-	// raíz cuadrada
+	// Para las raices usamos la excepcion de que no se puede hacer 
+	// la operación raíz cuadrada a^1/2
 	public double raiz_cuadrada(double a) {
 		return Math.sqrt(a);
 	}
 	
-	// raíz cubica
+	// la operación raíz cubica a^1/3
 	public static double raiz_cubica(double a) {
 		return Math.cbrt(a);
 	}
 	
-	// división
+	// la operación división a/b (con la excepción de /0)
 	public double division(double a, double b) {
 	    try {
 	        double resultado  = a / b;
