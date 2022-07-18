@@ -22,9 +22,8 @@ public class Calculos {
 	}
 	
 	// multiplicación
-	public static double multiplicacion() {
-		double resultado = a * b;
-		return resultado;
+	public double multiplicacion() {
+		return this.a * this.b;
 	}
 	
 	// potencia

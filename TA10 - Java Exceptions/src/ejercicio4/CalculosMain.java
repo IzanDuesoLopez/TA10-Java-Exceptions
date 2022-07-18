@@ -1,5 +1,6 @@
 package ejercicio4;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CalculosMain {
@@ -19,17 +20,20 @@ public class CalculosMain {
 		// Hacemos un try catch para comprobar que no se introducen valores no validos
 		try {
 			opcionMenu = sc.nextInt();
-		} catch (Exception e) {
+		} catch (InputMismatchException e) {
 			System.out.println("Número no valido " + e.getMessage());
 		}
 		
 		// Switch con la opción elegida por el usuario
 		switch (opcionMenu) {
 		case 1:
+			calcular.suma();
 			break;
 		case 2:
+			calcular.resta();
 			break;
 		case 3:
+			calcular.multiplicacion();
 			break;
 		case 4:
 			break;
