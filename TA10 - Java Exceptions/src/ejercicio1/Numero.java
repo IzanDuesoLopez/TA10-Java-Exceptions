@@ -13,9 +13,5 @@ public class Numero {
 		// Comprobar si es un número, si no lo es incrementar resultados. Utilizar la Excepcion InputMismatchException
 	
 	// Método conseguirAdivinarlo
-	
-	public static void pedirNúmero {
-		
-	}
 
 }
