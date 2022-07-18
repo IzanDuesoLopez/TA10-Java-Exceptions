@@ -21,7 +21,7 @@ public class ExcepcionCustomizada extends Exception{
 		String resultado = ""; // Almacenamos el mensaje resultante
 		
 		// Switch con el codigo de la excepcion
-		switch(codigoExcepcion) {
+		switch(this.codigo) {
 		// Comprobamos los diferentes casos
 		case 1:
 			resultado = "";
