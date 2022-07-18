@@ -27,8 +27,15 @@ public class Numero {
 	
 	// Método adivinarNumero
 		// Comprobar si es un número, si no lo es incrementar resultados. Utilizar la Excepcion InputMismatchException
+	public void adivinarNumero() {
+		
+	}
 	
 	// Método conseguirAdivinarlo
+	public void conseguirAdivinarlo() {
+		System.out.println("Felicidades, conseguiste adivinar el número" + "Tú número de intentos ha sido: " + numeroIntentos);
+		
+	}
 	
 	// Getters y Setters
 	public int getNumero() {
