@@ -8,6 +8,9 @@ public class Calculos {
 	private int potencia;
 	
 	// Constructores
+	public Calculos() {
+		super();
+	}
 	
 	// suma
 	public double suma(double a, double b) {
@@ -41,17 +44,14 @@ public class Calculos {
 		return Math.cbrt(a);
 	}
 	
-	// raiz
-	
 	// división
 	public double division(double a, double b) {
 	    try {
 	        double resultado  = a / b;
-	         return resultado;
 	    } catch (Exception e) {
 	        System.out.println("No se puede dividir un número entre 0");	      
 	    }
-		return this.a / this.b;
+	    	return a / b;
 	}
 }
 	
