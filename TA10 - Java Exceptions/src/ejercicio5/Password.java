@@ -21,8 +21,27 @@ public class Password {
 	/* Método generarPassword() genera la contraseña del objeto con 
 	   la longitud que tengamos  */
 	public String generarPassword() {
-		return "";
+		// Posibles carácteres que utilizaremos al generar la contraseña
+		String caracteres = "abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+		
+		// StringBuilder en el que iremos concatenando los caracteres elegidos aleatoriamente
+		StringBuilder resultado = new StringBuilder(this.longitud);
+		
+		//Variable donde guardaremos el carácter aleatorio generado con Math.random()
+		int caracterAleatorio = 0;
+		
+		// FOR con la longitud establecida por parámetro
+		for (int i = 0; i < this.longitud; i++) {
+			// El caracter aleatorio 
+			caracterAleatorio = (int) (caracteres.length() * Math.random());
+			// Concatenamos a la StringBuilder el charat del entero generado anteriormente
+			resultado.append(caracteres.charAt(caracterAleatorio));
+		}
+		
+		// Devolvemos la StringBuilder pasandola primero a String
+		return resultado.toString();
 	}
+	
 	// Getters de contraseña y longitud
 	public int getLongitud() {
 		return longitud;
