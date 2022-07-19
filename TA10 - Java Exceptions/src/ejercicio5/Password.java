@@ -14,6 +14,7 @@ public class Password {
 		this.longitud = longitud;
 		this.contrasena = generarPassword();
 	}
+	
 	/* Método esFuerte(). Devuelve un booleano si es fuerte o no. Para que sea
 	   fuerte debe tener mas de 2 mayusculas, mas de 1 minuscula y mas de 5 números */
 	public boolean esFuerte() {
