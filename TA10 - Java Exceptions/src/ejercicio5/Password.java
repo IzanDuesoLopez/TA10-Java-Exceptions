@@ -17,6 +17,38 @@ public class Password {
 	}
 	/* Método esFuerte(). Devuelve un booleano si es fuerte o no. Para que sea
 	   fuerte debe tener mas de 2 mayusculas, mas de 1 minuscula y mas de 5 números */
+	public boolean esFuerte() {
+		// Contadores de mayusculas, minusculas y numeros
+		int mayusculas = 0;
+		int minuscula = 0;
+		int numeros = 0;
+		
+		// Array de caracteres para comprobar cada caracter individualmente
+		char caracteres[] = new char[contrasena.length()];
+		
+		// Pasamos la string al array de chars y comprobamos mediante la tabla ASCII
+		// cada carácter individualmente, en el caso de que encontremos el carácter deseado
+		// aumentamos en 1 el contador en cuestión
+		for (int i = 0; i < contrasena.length(); i++) {
+			caracteres[i] = contrasena.charAt(i);
+			if(caracteres[i] >= 65 && caracteres[i] <= 90) {
+				mayusculas++; // Si es una mayuscula incrementamos el contador
+			} else if (caracteres[i] >= 97 && caracteres[i] <= 122) {
+				minuscula++; // Si es una minuscula incrementamos el contador
+			} else if (caracteres[i] >= 48 && caracteres[i] <= 57) {
+				numeros++; // Si es un número incrementamos el contador
+			}
+		}
+		
+		// Si la contraseña cumple los requisitos para ser una contraseña fuerte
+		if(mayusculas >= 2 && minuscula >= 1 && numeros >= 5) {
+			return true; // Devolvemos true
+		} else {
+			return false; // Devolvemos false
+		}
+		
+	}
+	
 	
 	/* Método generarPassword() genera la contraseña del objeto con 
 	   la longitud que tengamos  */
