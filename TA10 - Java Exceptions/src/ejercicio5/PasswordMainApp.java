@@ -15,7 +15,7 @@ public class PasswordMainApp {
 		contrasenas = new Password[cantidad];
 
 		// TEST
-		Password contra = new Password(25);
+		Password contra = new Password(35);
 		System.out.println(contra.generarPassword());
 		System.out.println(contra.esFuerte());
 		// TEST

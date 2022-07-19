@@ -46,9 +46,7 @@ public class Password {
 		} else {
 			return false; // Devolvemos false
 		}
-		
 	}
-	
 	
 	/* Método generarPassword() genera la contraseña del objeto con 
 	   la longitud que tengamos  */
