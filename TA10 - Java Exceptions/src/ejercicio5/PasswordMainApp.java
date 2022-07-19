@@ -14,11 +14,15 @@ public class PasswordMainApp {
 		cantidad = sc.nextInt();
 		contrasenas = new Password[cantidad];
 
-		// TEST (borrar)
-		Password contra = new Password(35);
-		System.out.println(contra.generarPassword());
-		System.out.println(contra.esFuerte());
-		// TEST (borrar)
+		// TEST 
+		Password contra = new Password(20);
+		System.out.println("Contraseña: " + contra.getContrasena());
+		if(contra.esFuerte()) {
+			System.out.println("Es fuerte");
+		} else {
+			System.out.println("No es fuerte");
+		}
+		// TEST 
 
 		// Indicamos longitud de las Passwd antes del bucle
 

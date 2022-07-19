@@ -13,7 +13,6 @@ public class Password {
 	public Password(int longitud) {
 		this.longitud = longitud;
 		this.contrasena = generarPassword();
-		
 	}
 	/* Método esFuerte(). Devuelve un booleano si es fuerte o no. Para que sea
 	   fuerte debe tener mas de 2 mayusculas, mas de 1 minuscula y mas de 5 números */
@@ -33,13 +32,16 @@ public class Password {
 			caracteres[i] = contrasena.charAt(i);
 			if(caracteres[i] >= 65 && caracteres[i] <= 90) {
 				mayusculas++; // Si es una mayuscula incrementamos el contador
-			} else if (caracteres[i] >= 97 && caracteres[i] <= 122) {
+			}
+			if (caracteres[i] >= 97 && caracteres[i] <= 122) {
 				minuscula++; // Si es una minuscula incrementamos el contador
-			} else if (caracteres[i] >= 48 && caracteres[i] <= 57) {
+			}
+			if (caracteres[i] >= 48 && caracteres[i] <= 57) {
 				numeros++; // Si es un número incrementamos el contador
 			}
 		}
 		
+		System.out.println("Mayusculas: " + mayusculas + " Minusculas: " + minuscula + " Números: " + numeros);
 		// Si la contraseña cumple los requisitos para ser una contraseña fuerte
 		if(mayusculas >= 2 && minuscula >= 1 && numeros >= 5) {
 			return true; // Devolvemos true
@@ -53,7 +55,7 @@ public class Password {
 	public String generarPassword() {
 		// Posibles carácteres que utilizaremos al generar la contraseña
 		String caracteres = "abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-		
+		String resultadoFinal;
 		// StringBuilder en el que iremos concatenando los caracteres elegidos aleatoriamente
 		StringBuilder resultado = new StringBuilder(this.longitud);
 		
@@ -68,8 +70,10 @@ public class Password {
 			resultado.append(caracteres.charAt(caracterAleatorio));
 		}
 		
+		resultadoFinal = resultado.toString(); // Guardamos en la string el resultado con la contraseña
+		
 		// Devolvemos la StringBuilder pasandola primero a String
-		return resultado.toString();
+		return resultadoFinal;
 	}
 	
 	// Getters de contraseña y longitud
