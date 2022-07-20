@@ -32,11 +32,11 @@ public class PasswordMainApp {
 
 		// Finalmente mostramos la contraseña y si es fuerte o no
 		for(int i = 0; i < contrasenas.length; i++) {
-			boolean resultado = contrasenas[i].esFuerte();
+			boolean resultado = fuerte[i];
 			if(resultado) {
-				System.out.println("Es fuerte");
+				System.out.println("\nEs fuerte");
 			} else {
-				System.out.println("No es fuerte");
+				System.out.println("\nNo es fuerte");
 			}
 			System.out.println("Contraseña " + (i + 1) + ": " +
 			contrasenas[i].getContrasena() + " " + resultado);

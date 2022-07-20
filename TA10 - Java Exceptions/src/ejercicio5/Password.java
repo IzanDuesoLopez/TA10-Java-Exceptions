@@ -41,7 +41,6 @@ public class Password {
 				numeros++; // Si es un número incrementamos el contador
 			}
 		}
-		
 		System.out.println("Mayusculas: " + mayusculas + " Minusculas: " + minuscula + " Números: " + numeros);
 		// Si la contraseña cumple los requisitos para ser una contraseña fuerte
 		if(mayusculas >= 2 && minuscula >= 1 && numeros >= 5) {
